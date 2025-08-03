@@ -1,0 +1,16 @@
+{
+  "test": {
+    "name": "test",
+    "description": "This is a test",
+    "version": "1.0.0",
+    "arr": [
+      {
+        "name": "item1",
+        "value": 10
+      },
+      {
+        "name": "item2",
+        "value": 20
+      }
+    ]
+}
