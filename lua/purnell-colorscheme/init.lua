@@ -31,6 +31,7 @@ function M.setup()
 		green = "#00ff00",
 		blue_dark = "#667ea7",
 		blue_light = "#70abaf",
+		blue_lighter = "#99bac4",
 		orange_light = "#ddb187",
 		orange = "#d68437",
 		yellow = "#e7c96e",
@@ -68,8 +69,10 @@ function M.setup()
 	link({ group = "@lsp.typemod.variable.defaultLibrary.typescript", link_to = "Identifier" })
 
 	-- TSX
-	link({ group = "@tag.builtin.tsx", link_to = "Normal" })
-	link({ group = "@tag.tsx", link_to = "Normal" })
+	highlight({ group = "@tag.builtin.tsx", fg = colors.blue_lighter, bg = colors.black })
+	highlight({ group = "@tag.tsx", fg = colors.blue_lighter, bg = colors.black })
+	--link({ group = "@tag.builtin.tsx", link_to = "Normal" })
+	--link({ group = "@tag.tsx", link_to = "Normal" })
 	link({ group = "@tag.delimiter.tsx", link_to = "Normal" })
 	link({ group = "@lsp.typemod.variable.defaultLibrary.typescriptreact", link_to = "Identifier" })
 

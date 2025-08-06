@@ -33,8 +33,9 @@ const Bar = () => {
 
   return (
     <div>
-      <Foo />
-      <button onClick={handleClick}>Click Me</button>
+      {v > 10 ?
+        <Foo /> :
+        <button onClick={handleClick}>Click Me</button>}
     </div>
   );
 }
